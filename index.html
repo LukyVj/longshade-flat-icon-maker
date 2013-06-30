@@ -1,0 +1,92 @@
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>LongShade Flat Icon maker | by Tripod ∵</title>
+	<link rel="shortcut icon" href="ico.ico" type="image/x-icon" />
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<!--[if gte IE 7]><!-->
+	<link href="style.css" media="screen, projection" rel="stylesheet" type="text/css" />	
+	
+
+	
+</head>
+<body>
+    <div id="controls">
+       <a href="javascript:void(0)" type="button" class="btn small" id="closePane"><span  class="entypo-left-open"></span><span  class="entypo-left-open"></span></a>
+    <div class="header">
+      <p>Long Shade Flat Icon generator</p>
+    </div>
+    <div id="admin">
+ 
+		<div id="firstStep">
+      <label for="name"><strong><span class="entypo-pencil"></span></strong> </label>
+		      <input type="text" name="name" placeholder="name (only 2 letters)" id="nameIcon" />
+            <label for="color"><strong>#</strong> </label>
+		      <input type="text" placeholder="color (hexadecimal)" id="colorIcon" name="color" />
+		      <input type="button" value="add" id="addIcon" />
+		</div>
+		<div id="secondStep"> 
+		     <h3> Change radius <span class="entypo-db-shape"></span></h3>
+		      <input type="range" min="0" max="100" value="0" id="radius" name="radius">
+		      <span id="radVal" class="val"></span>
+		      <h3> Change shade size <span class="entypo-resize-full"></span></h3>
+		      <input type="range" min="10" max="150" value="0" id="shadow">
+		      <span id="shadVal" class="val"></span>
+		      
+		      <input type="button" value="Set Ready" id="ready">
+		      
+		      </div>
+		</div>
+		<div id="thirdStep"> 
+		     <h3> Get the code <span class="entypo-code"></span></h3>		      
+		      <textarea id="finalCode"></textarea>
+		      
+		</div>
+		<div id="footer">
+ 	<p> <span class="strong">LongShade Flat Icon maker |</span> by <span class="strong">Tripod ∵</span> | 2013 </p>
+ </div>
+	</div>
+
+<div id="controlOutput">
+	
+<a href="javascript:void(0)" type="button" class="btn small" id="getCode"><span  class="entypo-code"></span></a>
+
+<a href="javascript:void(0)" type="button" class="btn small" id="delete"><span  class="entypo-trash"></span></a>
+
+
+<a href="javascript:void(0)" type="button" class="btn small" id="refresh"><span class="entypo-ccw"></span></a>
+
+</div>
+  <div id="output">     
+  <!-- 
+  Long Shade Flat Icon generator.
+  Made with love by @lukyvj 
+  -->
+  </div>
+ 
+ 
+
+ 
+<!-- Scripts --> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script><script src="http://lab.web-gate.fr/prefixfree.min.js"></script>
+
+
+<script src="functions.js">
+
+</script>
+<script charset="utf-8">
+$(document).ready(function() {
+  $('#output .icon').click(function(){
+
+  $(this).toggleClass('modify');
+  $("*").not($(this)).removeClass('modify')
+});
+   });
+</script>
+</body>
+</html>
