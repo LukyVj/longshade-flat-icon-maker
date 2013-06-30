@@ -4,7 +4,7 @@ longshade-flat-icon-maker
 Longshade Flat Icon Maker
 _________________________
 
-The simpliest way to create Long Shade Flat Icons. 
+<a href="http://lab.web-gate.fr/ls-maker">The simpliest way to create Long Shade Flat Icons.</a> 
 ----------------------------------------------------
 
 Features : 
