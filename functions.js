@@ -102,7 +102,21 @@ $(document).ready(function () {
  $('input#shadow').on('change', function() {
     printShad.call($(this));
 });
-  function printRadius() {
+ $('input#txtSize').on('change', function() {
+    printTxtSize.call($(this));
+});
+  function printTxtSize() {
+       var modIcon = $(".modify").attr('id');
+   var id = modIcon;
+   var resTsize = $(this).val();
+      var resRad = $(this).val();
+   var resizeShade = resRad;
+   var resizeTxtSize = resTsize;
+    $('#txtVal').empty().append(resTsize + 'px');
+      var tar =   $('.modify');
+tar.css('font-size', resTsize+'px');
+$("#output").append("<style type='text/css' >  #"+ modIcon+".icon:before{content:'';font-size:"+ resTsize +"px;display:block;float:left;width:110px;height:110px;position:absolute;margin:25px;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);background:-webkit-gradient(linear,60.06% 107.04%,39.94% -7.04%,from(rgba(0,0,0,.1)),to(rgba(0,0,0,0)));background:-webkit-linear-gradient(100deg,rgba(0,0,0,.1),rgba(0,0,0,0));background:-moz-linear-gradient(100deg,rgba(0,0,0,.1),rgba(0,0,0,0));background:-o-linear-gradient(100deg,rgba(0,0,0,.1),rgba(0,0,0,0));background:linear-gradient(100deg,rgba(0,0,0,.1),rgba(0,0,0,0));width:"+ resizeShade +"px !important; height:"+ resizeShade +"px !important}");  } 
+function printRadius() {
     
    var modIcon = $(".modify").attr('id');
    var id = modIcon;
