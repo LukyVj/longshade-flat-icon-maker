@@ -11,3 +11,7 @@ Features :
 
 The website uses the api of weloveiconfonts.com 
 *We Love Icon Fonts - A free and open-source icon fonts hosting service by @TimPietrusky http://weloveiconfonts.com/*
+
+----------------------------------------------------
+
+Example : http://lab.web-gate.fr/ls-maker
