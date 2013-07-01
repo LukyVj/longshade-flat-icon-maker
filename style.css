@@ -398,3 +398,54 @@ input[type="range"]::-webkit-slider-thumb {
     color: #333;
     text-shadow: 0 1px 1px rgba(255,255,255,.7);
 }
+
+	#color{
+		width:180px;
+		height:180px;
+    margin:30px 10px 0;
+    float:left;
+	}
+	
+#contentColor{
+  width:200px;
+  height:270px;
+  margin:20px auto;
+  background:#EFEFEF;
+  border-radius:1px;
+  box-shadow:0 2px 5.42px rgba(0,0,0,.1);
+  
+}
+
+#contentColor h2{
+  text-align:center;
+  font-size:12px;
+  position:absolute;
+  margin-left:65px;
+  line-height:.9;
+}
+.field{
+  width:90%;
+  margin:6% 5%;
+  float:left;
+  position:relative;
+  height:13%;
+  background:#fff;
+}
+.field .color{
+  display:block;
+  width:100%;
+  text-align:center;
+}
+.field .color span{
+  letter-spacing:3px;
+  line-height:2;
+}
+#color b{
+  display:block;
+  width:20px;
+  height:20px;   
+  margin: 75px auto;
+}
+ b span[class*="entypo-"]{
+   font-size:30px;
+}

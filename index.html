@@ -9,12 +9,65 @@
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	
 	<!--[if gte IE 7]><!-->
 	<link href="style.css" media="screen, projection" rel="stylesheet" type="text/css" />	
 	
 
 	
 </head>
+<style type="text/css" media="screen">
+	#color{
+		width:180px;
+		height:180px;
+    margin:30px 10px 0;
+    float:left;
+	}
+	
+#contentColor{
+  width:200px;
+  height:270px;
+  margin:20px auto;
+  background:#EFEFEF;
+  border-radius:1px;
+  box-shadow:0 2px 5.42px rgba(0,0,0,.1);
+  
+}
+
+#contentColor h2{
+  text-align:center;
+  font-size:12px;
+  position:absolute;
+  margin-left:65PX;
+  line-height:.9;
+}
+.field{
+  width:90%;
+  margin:6% 5%;
+  float:left;
+  position:relative;
+  height:13%;
+  background:#fff;
+}
+.field .color{
+  display:block;
+  width:100%;
+  text-align:center;
+}
+.field .color span{
+  letter-spacing:3px;
+  line-height:2;
+}
+#color b{
+  display:block;
+  width:20px;
+  height:20px;   
+  margin: 75px auto;
+}
+ b span[class*="entypo-"]{
+   font-size:30px;
+}
+</style>
 <body>
     <div id="controls">
        <a href="javascript:void(0)" type="button" class="btn small" id="closePane"><span  class="entypo-left-open"></span><span  class="entypo-left-open"></span></a>
@@ -29,6 +82,21 @@
             <label for="color"><strong>#</strong> </label>
 		      <input type="text" placeholder="color (hexadecimal)" id="colorIcon" name="color" />
 		      <input type="button" value="add" id="addIcon" />
+				<!-- Color Picker -->  
+				<div id="contentColor">
+					<div id="hexaHead">
+						<h2>Color Picker</h2>
+					</div>
+					<div id="color">
+						<b><span class="entypo-lock"></span></b>
+					</div> 
+					<div class="field">
+						<div class="color">
+							<span id="hexaRes"></span>
+						</div>
+					</div>
+				</div>
+				<!--//-->		      
 		</div>
 		<div id="secondStep"> 
 		     <h3> Change radius <span class="entypo-db-shape"></span></h3>
@@ -84,10 +152,12 @@
 <!-- Scripts --> 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script><script src="http://lab.web-gate.fr/prefixfree.min.js"></script>
 
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.0.1/d3.v3.min.js"></script>
 
-<script src="functions.js">
+<script src="functions.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.0.1/d3.v3.min.js"></script>
 
-</script>
+<script charset="utf-8" src="d3ColorPicker.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
