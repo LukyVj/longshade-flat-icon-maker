@@ -236,6 +236,9 @@ function printRadius() {
 
 window.setInterval(function(){
 	$(".icon").click(function(){$(this).addClass("modify");$("*").not($(this)).removeClass("modify")});
+	$('body').on('click', function(){
+		$("*").hasClass("modify").removeClass('modify');
+	});
 	var secondStep = $("#secondStep");
 	var icon = $(".icon");
 	if($("*").hasClass("modify")){secondStep.fadeIn(10)}
